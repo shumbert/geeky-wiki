@@ -1,2 +1,2 @@
-# Geek wiki
-Go [here](https://github.com/shumbert/geek-wiki/wiki)
+# Geeky wiki
+Go [here](https://github.com/shumbert/geeky-wiki/wiki)
