@@ -2,17 +2,14 @@ Welcome to the Geeky wiki!!
 
 # Cheatsheets
 - [dns](cheatsheets/dns.md)
-- [feeds](cheatsheets/feeds.md)
-- [linux](cheatsheets/linux.md)
 - [mongodb](cheatsheets/mongodb.md)
 - [mysql](cheatsheets/mysql.md)
 - [netcat](cheatsheets/netcat.md)
 - [nmap](cheatsheets/nmap.md)
-- [openssl](cheatsheets/openssl.md)
 - [postgresql](cheatsheets/postgresql.md)
 - [qr codes](cheatsheets/qrcode.md)
+- [rss](cheatsheets/rss.md)
 - [strace](cheatsheets/strace.md)
-- [wordpress](cheatsheets/wordpress.md)
 - [zfs](cheatsheets/zfs.md)
 
 # Development
@@ -33,13 +30,10 @@ Welcome to the Geeky wiki!!
 # Links
 - [android](links/android.md)
 - [awesome lists](links/awesome-lists.md)
-- [bsd](links/bsd.md)
 - [crypto](links/crypto.md)
 - [email](links/email.md)
 - [hacking](links/hacking.md)
 - [hardware](links/hardware.md)
-- [linux](links/linux.md)
-- [macos](links/macos.md)
 - [osint](links/osint.md)
 - [programming](links/programming.md)
 - [reversing](links/reversing.md)
@@ -47,13 +41,12 @@ Welcome to the Geeky wiki!!
 - [software](links/software.md)
 - [sysadmin](links/sysadmin.md)
 - [web](links/web.md)
-- [windows](links/windows.md)
 
 # Operating Systems
 - [debian](operatingsystems/debian.md)
   - [login scripts](operatingsystems/debian/login-scripts.md)
 - [freedos](operatingsystems/freedos.md)
-- Linux
+- [linux](operatingsystems/linux.md)
   - [clipboards](operatingsystems/linux/clipboard.md)
   - [miscellaneous](operatingsystems/linux/misc.md)
   - [performances](operatingsystems/linux/performances.md)
