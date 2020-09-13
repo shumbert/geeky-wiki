@@ -1,0 +1,33 @@
+#! /bin/bash
+
+set -e
+
+activate_xfce() {
+  if [[ -f /var/lib/AccountsService/users/${USER} ]] && pgrep gdm3 > /dev/null; then
+    if ! grep '^XSession=xfce$' /var/lib/AccountsService/users/${USER} > /dev/null; then
+      log "Setting up xfce4 as gdm default session..."
+      sudo sed --in-place 's/^XSession=.*$/XSession=xfce/' /var/lib/AccountsService/users/${USER}
+    fi
+  fi
+}
+
+install_packages() {
+  if ! dpkg -l xfce4 ${@} > /dev/null 2>&1; then
+    log "Installing xfce4 packages..."
+    sudo apt-get -y install xfce4
+    sudo apt-get -y install ${@}
+  fi
+}
+
+log() {
+  echo -e "\033[1m$1\033[0m"
+}
+
+
+# Install Xfce4 packages, append any packages you might need
+# such as GTK or icon themes
+install_packages arc-theme numix-icon-theme
+
+activate_xfce
+
+exit 0

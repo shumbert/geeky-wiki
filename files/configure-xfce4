@@ -1,0 +1,88 @@
+#! /bin/bash
+
+set -e
+
+XF=$(which xfconf-query)
+XFPANEL=$(which xfce4-panel)
+
+hide_bottom_panel() {
+  nb_panels=$(xfconf-query -c xfce4-panel -p /panels | sed 1,2d | wc -l)
+  if [[ ${nb_panels} -gt 1 ]]; then
+    log "Hiding the bottom panel..."
+    ${XF} -c xfce4-panel -p /panels -t int -s 1 -a
+    ${XFPANEL} -r
+  fi
+}
+
+log() {
+  echo -e "\033[1m$1\033[0m"
+}
+
+create_property() {
+  channel=${1}
+  property=${2}
+  typeof=${3}
+  value="${4}"
+
+  if ! ${XF} -c ${channel} -p ${property} > /dev/null 2>&1; then
+    log "Creating property ${channel} ${property}..."
+    ${XF} -c ${channel} -p ${property} -n -t ${typeof} -s "${value}"
+  else
+    set_property ${channel} ${property} ${value}
+  fi
+}
+
+get_property() {
+  channel=${1}
+  property=${2}
+
+  echo $(${XF} -c ${channel} -p ${property})
+}
+
+set_property() {
+  channel=${1}
+  property=${2}
+  value="${3}"
+
+  curr=$(get_property ${channel} ${property})
+  if [[ "${curr}" != "${value}" ]]; then
+    log "Setting property ${channel} ${property}..."
+    ${XF} -c ${channel} -p ${property} -s "${value}"
+  fi
+}
+
+set_wallpaper() {
+  file=${1}
+
+  if [[ ! -f ${file} ]]; then
+    log "${file} not found, exiting"
+    exit 1
+  else
+    set_property xfce4-desktop /backdrop/screen0/monitor0/workspace0/last-image /home/remnux/wallpaper.jpg
+  fi
+}
+
+
+hide_bottom_panel
+
+# choose your favourite wallpaper
+set_wallpaper /home/${USER}/wallpaper.jpg
+
+# set xfce4 properties
+set_property xsettings /Net/ThemeName Arc-Dark
+set_property xsettings /Net/IconThemeName Numix
+set_property xfwm4 /general/theme Arc-Dark
+set_property xfwm4 /general/click_to_focus "false"
+
+# And create properties if needed
+# create_property just calls set_property if the property already exists
+create_property xfce4-keyboard-shortcuts '/xfwm4/custom/<Super>Left' string tile_left_key
+create_property xfce4-keyboard-shortcuts '/xfwm4/custom/<Super>Right' string tile_right_key
+create_property xfce4-keyboard-shortcuts '/xfwm4/custom/<Super>Up' string tile_up_key
+create_property xfce4-keyboard-shortcuts '/xfwm4/custom/<Super>Down' string tile_down_key
+
+# TODO
+# create launchers
+# https://gist.github.com/debxp/aada42c872ccc09975a5c25b9a7921da
+
+exit 0
