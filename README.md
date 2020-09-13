@@ -16,11 +16,11 @@ Welcome to the Geeky wiki!!
 - [zfs](cheatsheets/zfs.md)
 
 # Development
-- [git](software/git.md)
+- [git](development/git.md)
 - [jekyll](development/jekyll.md)
-- [php](software/php.md)
-- [virtualenvwrapper](software/virtualenvwrapper.md)
-- [vscode](software/vscode.md)
+- [php](development/php.md)
+- [virtualenvwrapper](development/virtualenvwrapper.md)
+- [vscode](development/vscode.md)
 
 # Devops
 - [docker](devops/docker.md)
