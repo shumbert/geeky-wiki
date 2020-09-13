@@ -16,7 +16,11 @@ Welcome to the Geeky wiki!!
 - [zfs](cheatsheets/zfs.md)
 
 # Development
+- [git](software/git.md)
 - [jekyll](development/jekyll.md)
+- [php](software/php.md)
+- [virtualenvwrapper](software/virtualenvwrapper.md)
+- [vscode](software/vscode.md)
 
 # Devops
 - [docker](devops/docker.md)
@@ -81,7 +85,6 @@ Welcome to the Geeky wiki!!
 - [draw.io](software/drawio.md)
 - [exiftool](software/exiftool.md)
 - [firefox](software/firefox.md)
-- [git](software/git.md)
 - [gpg](software/gpg.md)
 - [hashcat](software/hashcat.md)
 - [i3](software/i3.md)
@@ -95,7 +98,6 @@ Welcome to the Geeky wiki!!
 - [openssl](software/openssl.md)
 - [openvpn](software/openvpn.md)
 - [pass](software/pass.md)
-- [php](software/php.md)
 - [rspamd](software/rspamd.md)
 - [signal](software/signal.md)
 - [skype](software/skype.md)
@@ -105,9 +107,7 @@ Welcome to the Geeky wiki!!
 - [tee](software/tee.md)
 - [vim](software/vim.md)
 - [virtualbox](software/virtualbox.md)
-- [virtualenvwrapper](software/virtualenvwrapper.md)
 - [vnc](software/vnc.md)
-- [vscode](software/vscode.md)
 - [wireguard](software/wireguard.md)
 - [wireshark](software/wireshark.md)
 - [wordpress](software/wordpress.md)
