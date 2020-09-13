@@ -1,0 +1,121 @@
+# Links
+- https://faq.i3wm.org/question/3747/enabling-multimedia-keys/?answer=3759#post-id-3759
+- http://fontawesome.io/cheatsheet/
+- https://github.com/ruudud/i3wm-scripts
+
+# Installation
+**Note:** the installation notes below were tested on a vanilla debian buster installation.
+
+## Packages
+```
+sudo apt-get install i3 i3blocks \
+    lightdm nemo suckless-tools feh arandr \
+    network-manager network-manager-gnome \
+    fonts-hack-ttf fonts-font-awesome \
+    lxappearance arc-theme moka-icon-theme \
+    rxvt-unicode gedit atril
+```
+
+## Configuration
+Stow the following packages from the [dotfiles](https://github.com/shumbert/dotfiles) repo:
+- fonts
+- i3
+- urxvt
+- xresources
+- xsession
+
+## lxappearance
+- in Widget
+  - select theme Arc-Darker
+  - select default font SFNS Display size 10
+- in Icon Theme
+  - select Moka
+
+## arandr
+- arandr is a graphical interface for xrandr
+- use arandr to make changes to monitor configuration, then save as to generate a shell-script. Copy-paste the xrandr command from the shell-script and put it in the .i3/config file (prefixed with exec always).
+
+## xprop
+- run xprop to get properties of window
+- for instance to get the window class, check the following line:
+```
+WM_CLASS(STRING) = "nautilus", "Nautilus"
+```
+
+Then in .i3/config:
+```
+assign [class="Nautilus"] $workspace3
+```
+
+## i3blocks
+To display used memory instead of free memory, edit /usr/share/i3blocks/memory and replace the following line:
+```
+		printf("%.1fG\n", mem_free/1024/1024)
+```
+
+with:
+```
+		printf("%.1fG\n", (mem_total-mem_free)/1024/1024)
+```
+
+# Shortcuts
+## Moving around
+| Binding | Command |
+|---------|---------|
+| Mod+(Left/Down/Up/Right) | switch to window on the left, bottom, top, right |
+| Mod+(j/k/l/;) | switch to window on the left, bottom, top, right |
+| Mod+Shift+(Left/Down/Up/Right) | move window to the left, bottom, top, right |
+| Mod+Shift+(j/k/l/;) | move window to the left, bottom, top, right |
+| Mod+number | move to workspace number |
+| Mod+Shift+number | move window to workspace number |
+| Mod+r | resize mode |
+| Mod+Delete | system mode |
+
+## Open/Close applications
+| Binding | Command |
+|---------|---------|
+| Mod+Enter | open terminal |
+| Mod+Shift+q | close window |
+| Mod+d | D-menu |
+
+## Containers
+| Binding | Command |
+|---------|---------|
+| Mod+h | next window to be tiled horizontally |
+| Mod+v | next window to be tiled vertically |
+| Mod+s | stacking mode |
+| Mod+e | tiling mode |
+| Mod+w | tabbing mode |
+| Mod+f | fullscreen mode |
+| Mod+Shift+Space | toggle floating mode (while in floating mode press Mod and click in the window to move it) |
+| Mod+a | focus parent |
+
+## Resize mode
+| Binding | Command |
+|---------|---------|
+| Esc | exit resize mode |
+| Return | exit resize mode |
+| right | make window bigger (for horizontal windows) |
+| left | make window smaller (for horizontal windows) |
+| down | make window bigger (for vertical windows) |
+| up | make window smaller (for vertical windows) |
+
+## System mode
+| Binding | Command |
+|---------|---------|
+| Esc | exit system mode |
+| Return | exit system mode |
+| l | lock the screen |
+| e | exit i3 |
+| s | suspend |
+| h | hibernate |
+| r | reboot |
+| Shift+s | poweroff |
+
+## Exit/Restart
+| Binding | Command |
+|---------|---------|
+| Mod+Shift+e | logout |
+| Mod+Shift+r | restart i3 |
+| Mod+Shift+x | lock screen |
+
