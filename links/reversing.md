@@ -14,6 +14,9 @@
 - [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
 - [Analyzing Malicious Office Documents](https://www.uperesia.com/analyzing-malicious-office-documents)
 
+# Malware sources
+- [Free Malware Sample Sources for Researchers](https://zeltser.com/malware-sample-sources/)
+
 # Radare2 links
 - [A journey into Radare2](https://github.com/ITAYC0HEN/A-journey-into-Radare2)
 - [Radare2 book](https://radare.gitbooks.io/radare2book/content/)
