@@ -36,3 +36,6 @@ echo -n 'bar' | xclip -i -selection primary
 
 # Firefox
 Generally copying text from the address bar and web pages sets both primary and clipboard, however copying text from a text input area only sets clipboard.
+
+# Xfce4-terminal
+Use Ctrl+Shift+V to paste content of clipboard
