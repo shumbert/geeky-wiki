@@ -1,6 +1,7 @@
 Linux has two clipboard buffers: PRIMARY and CLIPBOARD. Basic idea is that selecting text copies it to PRIMARY, it can then be pasted with a middle-click or using Shift+Insert. Copy/paste functions in most GUI applications mostly use CLIPBOARD.
 
 Some more advanced testing:
+
  - Copying:
   - lastpass browser extension: clipboard
   - pass: clipboard (or primary depending on config)
