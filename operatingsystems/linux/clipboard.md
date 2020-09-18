@@ -2,7 +2,7 @@ Linux has two clipboard buffers: PRIMARY and CLIPBOARD. Basic idea is that selec
 
 Some more advanced testing:
 
- - Copying:
+- Copying:
   - lastpass browser extension: clipboard
   - pass: clipboard (or primary depending on config)
   - ctrl+c in firefox: clipboard and primary
