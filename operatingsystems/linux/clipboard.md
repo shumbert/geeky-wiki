@@ -33,3 +33,6 @@ To set their content:
 echo -n 'foo' | xclip -i -selection clipboard
 echo -n 'bar' | xclip -i -selection primary
 ```
+
+# Firefox
+Generally copying text from the address bar and web pages sets both primary and clipboard, however copying text from a text input area only sets clipboard.
