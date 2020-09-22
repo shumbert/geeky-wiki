@@ -8,3 +8,4 @@
 # Crypto books
 - [An Intensive Introduction to Cryptography](https://intensecrypto.org/public/)
 - [The Joy of Cryptography](http://web.engr.oregonstate.edu/~rosulekm/crypto/)
+- [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)
