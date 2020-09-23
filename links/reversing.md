@@ -16,6 +16,9 @@
 
 # Malware sources
 - [Free Malware Sample Sources for Researchers](https://zeltser.com/malware-sample-sources/)
+- [Virus Bay](https://beta.virusbay.io/)
+- [Malware Bazaar](https://bazaar.abuse.ch/)
+- [MalShare](https://malshare.com/)
 
 # Radare2 links
 - [A journey into Radare2](https://github.com/ITAYC0HEN/A-journey-into-Radare2)
