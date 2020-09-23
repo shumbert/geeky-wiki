@@ -27,6 +27,9 @@
 - [A journey into Radare 2 – Part 1: Simple crackme](https://www.megabeets.net/a-journey-into-radare-2-part-1/)
 - [Radare Basics](https://moveax.me/radare-basics/)
 
+# Reversing coursese
+- [Zero2Automated](https://courses.zero2auto.com/)
+
 # Reversing links
 - [Reverse Engineering for Beginners](https://beginners.re/)
 - [Reverse Engineering Reading List](https://github.com/onethawt/reverseengineering-reading-list/blob/master/README.md)
