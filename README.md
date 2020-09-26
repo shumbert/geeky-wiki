@@ -25,6 +25,7 @@ Welcome to the Geeky wiki!!
 - [vagrant](devops/vagrant.md)
 
 # Hardware
+- [keyboards](hardware/keyboards.md)
 - [uefi](hardware/uefi.md)
 - [usb wifi dongles](hardware/usb-wifi-dongles.md)
 
