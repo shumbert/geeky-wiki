@@ -15,6 +15,7 @@ Welcome to the Geeky wiki!!
 # Development
 - [git](development/git.md)
 - [jekyll](development/jekyll.md)
+- [markdown](development/markdown.md)
 - [php](development/php.md)
 - [shell](development/shell.md)
 - [virtualenvwrapper](development/virtualenvwrapper.md)
