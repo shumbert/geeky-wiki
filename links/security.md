@@ -38,3 +38,7 @@
 - [Mozilla Observatory](https://observatory.mozilla.org/)
 - [Security Headers](https://securityheaders.com/)
 - [SSL Server Test](https://www.ssllabs.com/ssltest/)
+
+# Web security challenges
+- [Web Security Academy](https://portswigger.net/web-security)
+- [Pentestlab](https://pentesterlab.com/)
