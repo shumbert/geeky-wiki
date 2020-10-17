@@ -1,5 +1,14 @@
-# Setup (OpenBSD)
-## Installation
+# Setup
+## Debian
+```
+wget https://pkg.tarsnap.com/tarsnap-deb-packaging-key.asc
+sudo apt-key add tarsnap-deb-packaging-key.asc
+echo "deb http://pkg.tarsnap.com/deb/$(lsb_release -s -c) ./" | sudo tee -a /etc/apt/sources.list.d/tarsnap.list
+sudo apt-get update
+sudo apt install tarsnap
+```
+
+## OpenBSD
 Tarsnap first:
 ```
 ftp https://www.tarsnap.com/download/tarsnap-autoconf-1.0.39.tgz
