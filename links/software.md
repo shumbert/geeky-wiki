@@ -10,6 +10,9 @@
 # Hashcat
 - [Example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)
 
+# Messaging
+- [Secure E2EE messaging comparison](https://inteltechniques.com/messaging.html)
+
 # Nginx
 - [Nginx Admin's Handbook](https://github.com/trimstray/nginx-admins-handbook)
 - [Tuning NGINX for Better Performance](https://blog.codeship.com/tuning-nginx/)
