@@ -1,6 +1,6 @@
 # Create encrypted flash drive
 ```
-# sudo fdisk /dev/sdb
+$ sudo fdisk /dev/sdb
 Command (m for help): n
 Partition type
    p   primary (0 primary, 0 extended, 4 free)
@@ -28,10 +28,16 @@ The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
 
-# sudo cryptsetup luksFormat /dev/sdb1
-# sudo cryptsetup luksOpen /dev/sdb1 LUKS0001
-# sudo mkfs.ext4 /dev/mapper/LUKS0001 -L ENCRYPTED
-# sudo cryptsetup luksClose LUKS0001
+$ sudo cryptsetup luksFormat /dev/sdb1
+$ sudo cryptsetup luksOpen /dev/sdb1 LUKS0001
+$ sudo mkfs.ext4 /dev/mapper/LUKS0001 -L <label>
+$ sudo cryptsetup luksClose LUKS0001
+
+With the commands above the label is properly set once the LUKS container is opened. To have a proper label as soon as the flash drive is inserted use the following command:
+$ sudo cryptsetup config /dev/sdb1 --label <label>
+
+Finally you may want to change ownership of the filesystem. When the drive is mounted do:
+$ sudo chown <user>:<user> -R /path/to/mounted/volume
 ```
 # Manually mount encrypted LVM logical volume
 ## Identify the encrypted device
