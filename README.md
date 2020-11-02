@@ -97,6 +97,7 @@ Welcome to the Geeky wiki!!
 - [rspamd](software/rspamd.md)
 - [signal](software/signal.md)
 - [skype](software/skype.md)
+- [spideroak one](software/spideroakone.md)
 - [spotify](software/spotify.md)
 - [systemd](software/systemd.md)
 - [tarsnap](software/tarsnap.md)
