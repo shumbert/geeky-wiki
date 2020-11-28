@@ -10,6 +10,7 @@
 - [Is OpenBSD Secure](https://isopenbsdsecu.re/)
 - [OpenBSD handbook](https://www.openbsdhandbook.com/)
 - [Setting up a WireGuard® client with routing domains on OpenBSD](https://codimd.laas.fr/s/NMc3qt5PQ#)
+- [OpenBSD Router Guide](https://www.unixsheikh.com/tutorials/openbsd-router-guide/)
 
 ## Hardware support
 - [OpenBSD on the Lenovo ThinkPad X1 Carbon (5th Gen)](https://jcs.org/2017/09/01/thinkpad_x1c#openbsd-support)
