@@ -102,6 +102,7 @@ Welcome to the Geeky wiki!!
 - [systemd](software/systemd.md)
 - [tarsnap](software/tarsnap.md)
 - [tee](software/tee.md)
+- [thunderbird](software/thunderbird.md)
 - [vim](software/vim.md)
 - [virtualbox](software/virtualbox.md)
 - [vnc](software/vnc.md)
