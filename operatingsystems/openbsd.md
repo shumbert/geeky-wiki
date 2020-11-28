@@ -9,6 +9,7 @@
 - [Package management in OpenBSD](https://unixsheikh.com/articles/package-management-in-openbsd.html)
 - [Is OpenBSD Secure](https://isopenbsdsecu.re/)
 - [OpenBSD handbook](https://www.openbsdhandbook.com/)
+- [Setting up a WireGuard® client with routing domains on OpenBSD](https://codimd.laas.fr/s/NMc3qt5PQ#)
 
 ## Hardware support
 - [OpenBSD on the Lenovo ThinkPad X1 Carbon (5th Gen)](https://jcs.org/2017/09/01/thinkpad_x1c#openbsd-support)
