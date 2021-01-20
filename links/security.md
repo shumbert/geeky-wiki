@@ -25,7 +25,9 @@
 - [U2F, FIDO2, and Hardware Security Keys](https://jesperjo.com/f/u2f-fido2-and-hardware-security-keys)
 - [Making the Advanced Protection Program and Titan Security Keys easier to use on Apple iOS devices](https://security.googleblog.com/2020/06/making-advanced-protection-program-and.html)
 
-# Security and Opsec how-tos
+# Security and Opsec guides
+- [EFF Self-Defense Guide](https://ssd.eff.org/en)
+- [Security Planner](https://securityplanner.consumerreports.org/)
 - [Travel (Linux) laptop setup](https://paranoidbeavers.ca/travel-laptop-setup.html)
 - [Zebra Crossing: an easy-to-use digital safety checklist](https://github.com/narwhalacademy/zebra-crossing)
 
