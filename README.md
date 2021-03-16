@@ -78,6 +78,7 @@ Welcome to the Geeky wiki!!
 - [certbot](software/certbot.md)
 - [cinnamon](software/cinnamon.md)
 - [cryptsetup](software/cryptsetup.md)
+- [dnsmasq](software/dnsmasq.md)
 - [draw.io](software/drawio.md)
 - [exiftool](software/exiftool.md)
 - [firefox](software/firefox.md)
