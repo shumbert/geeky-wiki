@@ -20,6 +20,7 @@
 - Cool links about the current state of password cracking and password strength requirements
   - https://twitter.com/jacobegner/status/1372300613199990785
   - https://gist.github.com/atoponce/a7715930ae6eb7d6b487f2f76b57a68d
+- [Secure Messaging Apps Comparison](https://www.securemessagingapps.com/)
 
 # MFA links
 - [Ars Technica: Choosing 2FA authenticator apps can be hard. Ars did it so you don’t have to](https://arstechnica.com/information-technology/2020/05/choosing-2fa-authenticator-apps-can-be-hard-ars-did-it-so-you-dont-have-to/)
