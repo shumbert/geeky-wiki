@@ -72,6 +72,7 @@ Welcome to the Geeky wiki!!
 - [dns](security/dns.md)
 - [email](security/email.md)
 - [privacy](security/privacy.md)
+- [Security Keys](security/Security-Keys.md)
 
 # Software
 - [apache](software/apache.md)
