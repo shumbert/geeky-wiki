@@ -32,6 +32,7 @@ Welcome to the Geeky wiki!!
 
 # Links
 - [android](links/android.md)
+- [apple](links/apple.md)
 - [awesome lists](links/awesome-lists.md)
 - [crypto](links/crypto.md)
 - [email](links/email.md)
