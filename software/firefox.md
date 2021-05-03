@@ -22,8 +22,8 @@ By default, when you type something in the address bar it will display matches a
 
 If you are looking for a specific type of results you can use of the special characters below (followed by space):
 - ^ for browsing history
-- * for bookmarks
-- + for tagged bookmarks
+- \* for bookmarks
+- \+ for tagged bookmarks
 - % for open tabs
 - ? for search engine suggestions
 
