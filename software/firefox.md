@@ -1,11 +1,46 @@
+# Some links
+- [Firefox support](Firefox Support)
+- [Bookmarks in Firefox](https://support.mozilla.org/en-US/kb/bookmarks-firefox<Paste>)
+- [Keyboard shortcuts - Perform common Firefox tasks quickly](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)
+- [Address bar autocomplete in Firefox](https://support.mozilla.org/en-US/kb/address-bar-autocomplete-firefox)
+- [Restore bookmarks from backup or move them to another computer](https://support.mozilla.org/en-US/kb/restore-bookmarks-from-backup-or-move-them)
+- [Bookmark Tags - Categorize bookmarks to make them easy to find](https://support.mozilla.org/en-US/kb/categorizing-bookmarks-make-them-easy-to-find)
+
+# Some useful shortuts
+| Shortcut | Command |
+|---|---|
+| Ctrl + L | Focus Address Bar |
+| Ctrl + J | Focus Address Bar for web searches |
+| Ctrl + U | Page Source |
+| Ctrl + I | Page Info |
+| Ctrl + Shift + A | Add-ons |
+| Ctrl + Shift + O | Show the Library (bookmarks) |
+| Alt + ↓/↑ | Switch search engine (after you have written something in the address bar |
+
+# Address Bar
+By default, when you type something in the address bar it will display matches and suggestions from a variety of source: default search engine, history, bookmarks, open tabs, ...
+
+If you are looking for a specific type of results you can use of the special characters below (followed by space):
+- ^ for browsing history
+- * for bookmarks
+- + for tagged bookmarks
+- % for open tabs
+- ? for search engine suggestions
+
+# Bookmarks
+Firefox automatically backup your bookmarks and saves up to 15 backups in the profile bookmarkbackups folder.
+
+You can manually backup and restore bookmakrs. But **caution** restoring bookmarks from a backup will overwrite your current set of bookmarks with the ones in the backup file.
+
 # Run latest Firefox on Debian
-You can download the latest Firefox tarball directly from Mozilla and install it under /opt/:
+You can download the latest Firefox tarball directly from Mozilla and install it somewhere in your home folder:
 ```
 wget -O firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US"
-sudo tar xjf firefoxsetup.tar.bz2 -C /opt/
+mkdir $HOME/mozilla/
+tar xjf firefoxsetup.tar.bz2 -C $HOME/mozilla/
 ```
 
-The auto-update feature doesn't seem to work. Just repeat the instructions above when a new version is released.
+**note:** if you install Firefox in a directory where you don't have write permissions, auto-updates won't work
 
 # Profiles vs Containers
 Firefox profiles are equivalent to Chrome profiles. There is no built-in UI to switch between profiles though, so it requires more work. To manage profiles open a new tab and go to:
