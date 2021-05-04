@@ -30,22 +30,6 @@ Welcome to the Geeky wiki!!
 - [uefi](hardware/uefi.md)
 - [usb wifi dongles](hardware/usb-wifi-dongles.md)
 
-# Links
-- [android](links/android.md)
-- [apple](links/apple.md)
-- [awesome lists](links/awesome-lists.md)
-- [crypto](links/crypto.md)
-- [email](links/email.md)
-- [hacking](links/hacking.md)
-- [hardware](links/hardware.md)
-- [osint](links/osint.md)
-- [programming](links/programming.md)
-- [reversing](links/reversing.md)
-- [security](links/security.md)
-- [software](links/software.md)
-- [sysadmin](links/sysadmin.md)
-- [web](links/web.md)
-
 # Operating Systems
 - [debian](operatingsystems/debian.md)
   - [login scripts](operatingsystems/debian/login-scripts.md)
