@@ -6,6 +6,19 @@
 - [How fast are your disks? Find out the open source way, with fio](https://arstechnica.com/gadgets/2020/02/how-fast-are-your-disks-find-out-the-open-source-way-with-fio/)
 - [Intercepting Zoom's encrypted data with BPF](https://confused.ai/posts/intercepting-zoom-tls-encryption-bpf-uprobes)
 
+# Lock a user account
+```
+# Expire an account
+# if the account is expired user won't be able to login via password nor ssh public key
+sudo chage -E 0 <username>
+
+# Check expiration status
+sudo chage -l <username>
+
+# Un-expire an account
+sudo chage -E -1 <username>
+```
+
 # Partition, create filesystem and mount drive
 ```
 parted /dev/disk/by-id/scsi-0DO_Volume_volume-tor1-01 mklabel gpt
