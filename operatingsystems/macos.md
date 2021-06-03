@@ -73,18 +73,18 @@ brew cask list
 ```
 
 # Create a bootable macOS ISO
-Download macOS High Sierra:
-- open App Store, search for High Sierra and click Download
+Download macOS:
+- open App Store, search for macOS and click Download
 - the installer will launch, just close it with Command+Q
 
 In a terminal enter the following commands:
 ```
-hdiutil create -o /tmp/HighSierra.cdr -size 7316m -layout SPUD -fs HFS+J
-hdiutil attach /tmp/HighSierra.cdr.dmg -noverify -nobrowse -mountpoint /Volumes/install_build
-asr restore -source /Applications/Install\ macOS\ High\ Sierra.app/Contents/SharedSupport/BaseSystem.dmg -target /Volumes/install_build -noprompt -noverify -erase
-hdiutil detach /Volumes/OS\ X\ Base\ System
-hdiutil convert /tmp/HighSierra.cdr.dmg -format UDTO -o /tmp/HighSierra.iso
-mv /tmp/HighSierra.iso.cdr ~/Desktop/HighSierra.iso
+hdiutil create -o /tmp/MacBigSur -size 12500m -volname MacBigSur -layout SPUD -fs HFS+J
+hdiutil attach /tmp/MacBigSur.dmg -noverify -mountpoint /Volumes/MacBigSur
+sudo /Applications/Install\ macOS\ Big\ Sur/Contents/Resources/createinstallmedia --volume /Volumes/MacBigSur --nointeraction
+hdiutil detach /Volumes/MacBigSur/
+hdiutil convert /tmp/MacBigSur.dmg -format UDTO -o ~/Desktop/MacBigSur.cdr
+mv ~/Desktop/MacBigSur.cdr ~/Desktop/BigSur.iso
 ```
 
 # Run macOS High Sierra in VirtualBox
