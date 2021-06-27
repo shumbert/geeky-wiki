@@ -96,5 +96,14 @@ Finally format the partition:
 sudo mkfs.vfat -n 'FLASH' /dev/sdb1
 ```
 
+Alternatively format the partition as exFAT to go past the FAT32 file size limit (4GB):
+```
+# recent Linux distributions should have built-in support for exFAT
+# but if mkfs.exfat does not exist on your system install those packages
+sudo apt install exfat-fuse exfat-utils
+
+sudo mkfs.exfat -n 'FLASH' /dev/sdb1
+```
+
 #  GRUB and UEFI stuff
 - Grub needs the first 2MB at the start of an MBR disk, or a partition of its own on a GPT disk, to install itself. UEFI needs its own partition.
