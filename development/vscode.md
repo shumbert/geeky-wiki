@@ -3,8 +3,12 @@
 - [Visual Studio Marketplace - Sort lines](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines)
 
 # Extensions
+- Bash Debug
+- Bash IDE
+- Docker
 - Go
 - Python
+- shellcheck
 
 # Useful shortcuts
 | Keys | Command | Comment |
