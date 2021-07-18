@@ -46,6 +46,8 @@
 | Ctrl+K W | close all editors in the editor group | |
 | Ctrl+K Ctrl+W | close all editors | |
 
+There is also a PDF [reference](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf).
+
 # Files
 Linux - Delete $HOME/.config/Code and ~/.vscode.
 
