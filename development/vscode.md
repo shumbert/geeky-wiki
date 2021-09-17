@@ -46,6 +46,9 @@
 | Ctrl+K W | close all editors in the editor group | |
 | Ctrl+K Ctrl+W | close all editors | |
 | Ctrl+K M | Change file language | |
+| Ctrl+K Ctrl+C | Comment block | |
+| Ctrl+K Ctrl+U | Uncomment block | |
+
 
 There is also a PDF [reference](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf).
 
