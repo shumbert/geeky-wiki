@@ -74,6 +74,7 @@ Welcome to the Geeky wiki!!
 - [i3](software/i3.md)
 - [iperf3](software/iperf3.md)
 - [irc](software/irc.md)
+- [kvm](software/kvm.md)
 - [lightdm](software/lightdm.md)
 - [nginx](software/nginx.md)
 - [oathtool](software/oathtool.md)
