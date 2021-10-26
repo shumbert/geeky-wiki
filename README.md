@@ -36,7 +36,6 @@ Welcome to the Geeky wiki!!
 - [freedos](operatingsystems/freedos.md)
 - [linux](operatingsystems/linux.md)
   - [clipboards](operatingsystems/linux/clipboard.md)
-  - [miscellaneous](operatingsystems/linux/misc.md)
   - [performances](operatingsystems/linux/performances.md)
   - [software raid](operatingsystems/linux/software-raid.md)
 - [macos](operatingsystems/macos.md)
