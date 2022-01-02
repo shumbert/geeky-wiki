@@ -22,3 +22,16 @@
   - download links at https://www.microsoft.com/net/download/all
 - [PE-bear](https://hshrzd.wordpress.com/pe-bear/)
   - The Windows build requires Visual Studio 2010 Redistributable [package](https://github.com/hasherezade/releases/files/1868613/vcredist_x86.zip).
+
+# Making a Win10 malware analysis machine
+You *have* to disable Windows Security Real-time protection. However via the Windows Security settings you can only do that temporarily. To deactivate it permanently you have to do the following:
+1. Disable Tamper Protection (*important:* do that before changing Group Policy settings)
+  - Open Windows Security (type Windows Security in the search box)
+  - Virus & threat protection > Virus & threat protection settings > Manage settings
+  - Switch Tamper Protection to Off
+2. Open Local Group Policy Editor (type gpedit in the search box)
+  - Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus > Real-time Protection
+  - Enable Turn off real-time protection
+  - Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus
+  - Enable Turn off Microsoft Defender Antivirus
+3. Reboot
