@@ -61,3 +61,6 @@ Note that container tabs are disabled in Private Browsing and when Never Remembe
 Some links:
 - https://wiki.mozilla.org/Security/Contextual_Identity_Project/Containers
 - https://support.mozilla.org/en-US/kb/containers
+
+# Ugly fonts on Windows 10
+Enable ClearType fonts by executing cttune.exe from Win+R, and then following on-screen instructions.
