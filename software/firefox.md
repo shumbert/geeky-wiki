@@ -85,3 +85,8 @@ Total cookie protection is available when Enhanced Tracking Protection (ETP) is 
 
 ## Smart Block
 Firefox includes a tracking blocking feature which blocks third-party scripts and contents, but when activated it may interfere with websites normal behaviour as well as 3rd party login. To avoid this problem Firefox introduced SmartBlock which provides [local stand-ins scripts](https://blog.mozilla.org/security/2021/03/23/introducing-smartblock/) or quickly [unblocks scripts](https://blog.mozilla.org/security/2021/07/13/smartblock-v2/) when 3rd party login is needed.
+
+## Site Isolation
+Before Site Isolation Firefox would spawn one parent/privileged process which then launches and coordinates a number of child processes, mostly web content processes and utility processes. Although that architecture provides some level of protection an attacker could execute a sophisticated attack where a malicious site would gain full access to a web content process memory and potentially steal information stored by other web sites. More informatiton [here](https://hacks.mozilla.org/2021/05/introducing-firefox-new-site-isolation-security-architecture/).
+
+Site Isolation has been rolled out in Firefox 94, now each web site is loading in a separate process.
