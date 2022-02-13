@@ -90,3 +90,11 @@ Firefox includes a tracking blocking feature which blocks third-party scripts an
 Before Site Isolation Firefox would spawn one parent/privileged process which then launches and coordinates a number of child processes, mostly web content processes and utility processes. Although that architecture provides some level of protection an attacker could execute a sophisticated attack where a malicious site would gain full access to a web content process memory and potentially steal information stored by other web sites. More informatiton [here](https://hacks.mozilla.org/2021/05/introducing-firefox-new-site-isolation-security-architecture/).
 
 Site Isolation has been rolled out in Firefox 94, now each web site is loading in a separate process.
+
+## DoH
+Firefox started by-default rollout of DNS over HTTPS (DoH) for US and Canada users.
+
+More information:
+- [Firefox continues push to bring DNS over HTTPS by default for US users](https://blog.mozilla.org/en/products/firefox/firefox-continues-push-to-bring-dns-over-https-by-default-for-us-users/)
+- [Firefox extends privacy and security of Canadian internet users with by-default DNS-over-HTTPS rollout in Canada](https://blog.mozilla.org/en/mozilla/news/firefox-by-default-dns-over-https-rollout-in-canada/)
+- [Trusted Recursive Resolvers – Protecting Your Privacy with Policy and Technology](https://blog.mozilla.org/netpolicy/2019/12/09/trusted-recursive-resolvers-protecting-your-privacy-with-policy-technology/)
