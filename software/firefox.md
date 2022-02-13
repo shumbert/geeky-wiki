@@ -82,8 +82,3 @@ With supercookie protection Firefox partitions a number of caches and network co
 Firefox 86 and later has [total cookie protection](https://blog.mozilla.org/security/2021/02/23/total-cookie-protection/). Typically cookies can be shared between web sites, allowing trackers to "tag" your browser and follow you between websites. Now Firefox maintains a separate cookie jar for each website.
 
 Total cookie protection is available when Enhanced Tracking Protection (ETP) is set to Strict Mode, and since Firefox 89 in [Private Browsing mode](https://blog.mozilla.org/security/2021/06/01/total-cookie-protection-in-private-browsing/).
-
-
-Essentially supercookies is trackers storing user identifiters in obscure parts of the browser like Flash Storage, ETags, HSTS flags, ...
-
-With supercookie protection Firefox partitions a number of caches and network connections per top-level site.
