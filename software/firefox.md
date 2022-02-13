@@ -82,3 +82,6 @@ With supercookie protection Firefox partitions a number of caches and network co
 Firefox 86 and later has [total cookie protection](https://blog.mozilla.org/security/2021/02/23/total-cookie-protection/). Typically cookies can be shared between web sites, allowing trackers to "tag" your browser and follow you between websites. Now Firefox maintains a separate cookie jar for each website.
 
 Total cookie protection is available when Enhanced Tracking Protection (ETP) is set to Strict Mode, and since Firefox 89 in [Private Browsing mode](https://blog.mozilla.org/security/2021/06/01/total-cookie-protection-in-private-browsing/).
+
+## Smart Block
+Firefox includes a tracking blocking feature which blocks third-party scripts and contents, but when activated it may interfere with websites normal behaviour as well as 3rd party login. To avoid this problem Firefox introduced SmartBlock which provides [local stand-ins scripts](https://blog.mozilla.org/security/2021/03/23/introducing-smartblock/) or quickly [unblocks scripts](https://blog.mozilla.org/security/2021/07/13/smartblock-v2/) when 3rd party login is needed.
