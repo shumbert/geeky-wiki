@@ -64,3 +64,11 @@ Some links:
 
 # Ugly fonts on Windows 10
 Enable ClearType fonts by executing cttune.exe from Win+R, and then following on-screen instructions.
+
+# Security
+## Encrypted Client Hello
+Firefox supports [Encrypted Client Hello (ECH)](https://blog.mozilla.org/security/2021/01/07/encrypted-client-hello-the-future-of-esni-in-firefox/) since version 85. A few notes:
+- Work started on Encrypted SNI but it turned out to only have incomplete protection, now development has shifted to ECH.
+- With ECH the ClientHello is encrypted under the server's public key. The server's public key, used only for the purpose of encrypting the TLS handshake, is stored in a DNS record. More details [here](https://blog.cloudflare.com/encrypted-client-hello/).
+- Even though the TLS handshake is now encrypted, the DNS query the client uses to retrieve the public key leaks information. So ECH is only meant to be used in combination with DoH.
+- ECH in Firefox is not enabled by default, you can enable it via about:config.
