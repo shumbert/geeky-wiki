@@ -1,3 +1,12 @@
+# Links
+- https://vimawesome.com/
+- vimhelp.org
+- https://vim.fandom.com/wiki/Vim_Tips_Wiki
+- http://vimcasts.org
+- https://www.vim.org/
+- https://neovim.io/
+- https://neovim.io/doc/user/index.html
+
 # Cheatsheet
 ## Some notes
 ### File buffers
