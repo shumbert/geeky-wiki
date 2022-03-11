@@ -14,7 +14,7 @@ To run neovim via appimage on Debian/Ubuntu download the latest appimage file:
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 sudo cp nvim.appimage /usr/local/bin/
 sudo chown root:staff /usr/local/bin/nvim.appimage
-sudo chown 0755 /usr/local/bin/nvim.appimage
+sudo chmod 0755 /usr/local/bin/nvim.appimage
 ```
 
 Then update the alternatives:
