@@ -19,7 +19,6 @@ sudo chown 0755 /usr/local/bin/nvim.appimage
 
 Then update the alternatives:
 ```
-set -u
 sudo update-alternatives --install /usr/bin/ex ex /usr/local/bin/nvim.appimage 110
 sudo update-alternatives --install /usr/bin/vi vi /usr/local/bin/nvim.appimage 110
 sudo update-alternatives --install /usr/bin/view view /usr/local/bin/nvim.appimage 110
