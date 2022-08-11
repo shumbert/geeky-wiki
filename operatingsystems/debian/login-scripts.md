@@ -31,3 +31,6 @@ exec x-session-manager
 ```
 
 Since ~/.xsession is meant for running the session manager, the X session will log out and you will be returned to your display manager when this script terminates.
+
+## GDM
+`/etc/gdm/Xsession` sources `$HOME/.profile`.
