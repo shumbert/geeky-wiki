@@ -35,6 +35,7 @@ Welcome to the Geeky wiki!!
   - [login scripts](operatingsystems/debian/login-scripts.md)
 - [freedos](operatingsystems/freedos.md)
 - [linux](operatingsystems/linux.md)
+  - [bluetooth](operatingsystems/linux/bluetooth.md)
   - [clipboards](operatingsystems/linux/clipboard.md)
   - [performances](operatingsystems/linux/performances.md)
   - [software raid](operatingsystems/linux/software-raid.md)
