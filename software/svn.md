@@ -22,7 +22,7 @@ But now if you run `svn update` revision numbers look like:
 5 goodbye.txt
 ```
 
-This is also the reason why `svn log` may not show your latest commits. `svn log` essentially means `svn log .`, and revision number for `.` is not dump until you `svn update`.
+This is also the reason why `svn log` may not show your latest commits. `svn log` essentially means `svn log .`, and revision number for `.` is not bumped until you `svn update`.
 
 # Update your working copy
 ```
