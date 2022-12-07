@@ -88,6 +88,7 @@ Welcome to the Geeky wiki!!
 - [skype](software/skype.md)
 - [spideroak one](software/spideroakone.md)
 - [spotify](software/spotify.md)
+- [svn](software/svn.md)
 - [systemd](software/systemd.md)
 - [tarsnap](software/tarsnap.md)
 - [tee](software/tee.md)
